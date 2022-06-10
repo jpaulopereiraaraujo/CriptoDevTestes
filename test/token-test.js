@@ -30,7 +30,7 @@ describe("token", async () => {
 
     });
 
-    it("Trasfer test", async function () {
+    it("Transfer test", async function () {
         const [owner, wallet1] = await ethers.getSigners();
 
         const token = await ethers.getContractFactory("CryptoToken", owner);
@@ -67,7 +67,7 @@ describe("token", async () => {
 
     });
 
-    it("Trasfer Failtest", async function () {
+    it("Transfer Failtest", async function () {
         const [owner, wallet1] = await ethers.getSigners();
 
         const token = await ethers.getContractFactory("CryptoToken", owner);
