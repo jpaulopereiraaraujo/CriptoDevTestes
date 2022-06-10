@@ -85,8 +85,7 @@ describe("token", async () => {
         const fail = 0;
         const bOwner = await tokenTest.balanceOf(owner.address);
         
-        //testando o require, se o owner tem saldo para
-        //transferir
+        //testando o require, se o owner não tem saldo para transferir teste ok.
         if (transferValue > bOwner ) {
             expect(pass).to.equal(test);
         } else {
